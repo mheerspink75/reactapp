@@ -4,6 +4,7 @@ import TodoList from "./TodoList";
 import useTodoState from "./useTodoState";
 import Paper from "@material-ui/core/Paper";
 import Container from "@material-ui/core/Container";
+import '../styles.css';
 
 const TodoApp = () => {
   const { todos, addTodo, deleteTodo } = useTodoState([]);
@@ -11,7 +12,7 @@ const TodoApp = () => {
   return (
     <div>
       <Container maxWidth="lg">
-        <Paper>
+        <Paper className="TodoApp">
           <TodoForm
             saveTodo={todoText => {
               const trimmedText = todoText.trim();
