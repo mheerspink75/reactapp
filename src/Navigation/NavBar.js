@@ -17,6 +17,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
+
 import TodoApp from '../TodoApp/TodoApp';
 import logo from './logo.svg';
 import '../styles.css';
@@ -154,7 +155,7 @@ export default function MainPage() {
         </List>
         <Divider />
         <List>
-          <img src={logo} className="App-logo" alt="logo" />
+            <img src={logo} className="App-logo" alt="logo" />
         </List>
       </Drawer>
       <main
@@ -164,7 +165,6 @@ export default function MainPage() {
       >
         <div className={classes.drawerHeader} />
         <TodoApp />
-
       </main>
     </div>
   );
