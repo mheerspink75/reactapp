@@ -1,6 +1,5 @@
 .App {
     font-family: sans-serif;
-    background-color: lightgrey;
   }
 
   .App-logo {
@@ -16,4 +15,8 @@
     to {
       transform: rotate(360deg);
     }
+  }
+
+  .TodoApp {
+    min-height: 500px;
   }
