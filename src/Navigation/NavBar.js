@@ -134,19 +134,19 @@ export default function MainPage() {
         </div>
         <Divider />
         <List>
-          <ListItem button>
+          <ListItem button component="a" href="https://github.com/mheerspink75/reactapp" target="blank">
             <ListItemIcon>
               <InboxIcon />
             </ListItemIcon>
             <ListItemText primary="GitHub" />
           </ListItem>
-          <ListItem button>
+          <ListItem button component="a" href="https://codesandbox.io/s/todoapp1-edit-59g2z" target="blank">
             <ListItemIcon>
               <InboxIcon />
             </ListItemIcon>
             <ListItemText primary="Code Sandbox" />
           </ListItem>
-          <ListItem button>
+          <ListItem button component="a" href="https://sites.google.com/view/reference-page/procject-3" target="blank">
             <ListItemIcon>
               <MailIcon />
             </ListItemIcon>
