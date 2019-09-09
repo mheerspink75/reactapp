@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import MainPage from './Navigation/NavBar';
+import MainPage from './Navigation/MainPage';
 
 import "./styles.css";
 
