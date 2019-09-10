@@ -13,10 +13,10 @@ export class FormContactInfo extends Component {
     const { values, handleChange } = this.props;
     return (
       <List>
-        <ListItemText>
-          Please enter your contact information and continue to leave a
-          comment.....
-        </ListItemText>
+        <ListItemText
+          primary="Please enter your contact information and continue to leave a
+          comment....."
+        />
         <ListItem>
           <TextField
             required
@@ -53,11 +53,9 @@ export class FormContactInfo extends Component {
             defaultValue={values.email}
           />
         </ListItem>
-        <ListItem>
-          <Button color="primary" label="Continue" onClick={this.continue}>
-            Continue
-          </Button>
-        </ListItem>
+        <Button color="primary" label="Continue" onClick={this.continue}>
+          Continue
+        </Button>
       </List>
     );
   }

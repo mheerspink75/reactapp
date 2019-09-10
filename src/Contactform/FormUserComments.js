@@ -19,9 +19,7 @@ export class FormUserComments extends Component {
     return (
       <div>
         <List>
-          <ListItemText>
-            Please enter a comment and continue to verify your information...
-          </ListItemText>
+          <ListItemText primary="Please enter a comment and continue to verify your information..." />
           <ListItem>
             <TextField
               multiline
@@ -35,14 +33,12 @@ export class FormUserComments extends Component {
               defaultValue={values.comment}
             />
           </ListItem>
-          <ListItem>
-            <Button color="primary" label="Continue" onClick={this.continue}>
-              Continue
-            </Button>
-            <Button label="Back" onClick={this.back} color="secondary">
-              Back
-            </Button>
-          </ListItem>
+          <Button color="primary" label="Continue" onClick={this.continue}>
+            Continue
+          </Button>
+          <Button label="Back" onClick={this.back} color="secondary">
+            Back
+          </Button>
         </List>
       </div>
     );
