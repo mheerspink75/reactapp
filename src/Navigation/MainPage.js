@@ -19,7 +19,8 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 import CloudDownloadOutlinedIcon from '@material-ui/icons/CloudDownloadOutlined';
 import MailIcon from '@material-ui/icons/Mail';
 import TodoApp from '../TodoApp/TodoApp';
-import FormDialog from "./ContactForm";
+
+import FormDialog from "../Contactform/FormDialog";
 import logo from '../logo.svg';
 import '../styles.css';
 
@@ -159,7 +160,7 @@ export default function MainPage() {
           </ListItem>
           <Divider />
           <ListItem>
-            <FormDialog />
+           <FormDialog/>
           </ListItem>
         </List>
       </Drawer>
