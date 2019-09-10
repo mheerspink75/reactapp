@@ -24,9 +24,10 @@ export class FormUserComments extends Component {
           </ListItemText>
           <ListItem>
             <TextField
+              multiline
+              fullWidth
               id="outlined-multiline-flexible"
               label="Enter a comment"
-              multiline
               rowsMax="4"
               margin="normal"
               variant="outlined"
