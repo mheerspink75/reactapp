@@ -20,12 +20,15 @@ export class Confirm extends Component {
     } = this.props;
     return (
       <List>
+        <ListItemText primary="Please verify your contact info before clicking continue..." />
+        <hr />
         <ListItemText secondary="Name:  " />
         <ListItemText primary={firstName + " " + lastName} />
         <ListItemText secondary="Email:  " />
         <ListItemText primary={email} />
         <ListItemText secondary="Comment:  " />
         <ListItemText primary={comment} />
+        <hr />
         <Button label="Confirm" color="primary" onClick={this.continue}>
           Confirm
         </Button>
