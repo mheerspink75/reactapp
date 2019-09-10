@@ -14,15 +14,18 @@ export class Success extends Component {
   };
 
   render() {
+    const {
+      values: { firstName, lastName, email }
+    } = this.props;
+
     return (
       <div>
         <Typography variant="h5" align="center">
-          Thank You For Your Submission!
+          Thank You, {firstName + " " + lastName} For Your Submission!
         </Typography>
         <br />
         <Typography align="center">
-          A confirmation email will be sent to the email address that you
-          provided...
+          A confirmation email will be sent to {email}
         </Typography>
       </div>
     );
@@ -30,3 +33,4 @@ export class Success extends Component {
 }
 
 export default Success;
+
