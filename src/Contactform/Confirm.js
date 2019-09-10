@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { List, ListItem, ListItemText } from "@material-ui/core";
+import { List, ListItemText } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 
 export class Confirm extends Component {
@@ -20,23 +20,18 @@ export class Confirm extends Component {
     } = this.props;
     return (
       <List>
-        <ListItem>
-          <ListItemText>Name: {firstName + " " + lastName}</ListItemText>
-        </ListItem>
-        <ListItem>
-          <ListItemText>Email: {email}</ListItemText>
-        </ListItem>
-        <ListItem>
-          <ListItemText>Comment: {comment}</ListItemText>
-        </ListItem>
-        <ListItem>
-          <Button label="Confirm" color="primary" onClick={this.continue}>
-            Confirm
-          </Button>
-          <Button label="Back" color="secondary" onClick={this.back}>
-            Back
-          </Button>
-        </ListItem>
+        <ListItemText secondary="Name:  " />
+        <ListItemText primary={firstName + " " + lastName} />
+        <ListItemText secondary="Email:  " />
+        <ListItemText primary={email} />
+        <ListItemText secondary="Comment:  " />
+        <ListItemText primary={comment} />
+        <Button label="Confirm" color="primary" onClick={this.continue}>
+          Confirm
+        </Button>
+        <Button label="Back" color="secondary" onClick={this.back}>
+          Back
+        </Button>
       </List>
     );
   }
