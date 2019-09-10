@@ -19,7 +19,7 @@ export class FormContactInfo extends Component {
         </ListItemText>
         <ListItem>
           <TextField
-            autoFocus
+            required
             margin="dense"
             id="name"
             label="First Name"
@@ -31,7 +31,7 @@ export class FormContactInfo extends Component {
         </ListItem>
         <ListItem>
           <TextField
-            autoFocus
+            required
             margin="dense"
             id="name"
             label="Last Name"
@@ -43,7 +43,7 @@ export class FormContactInfo extends Component {
         </ListItem>
         <ListItem>
           <TextField
-            autoFocus
+            required
             margin="dense"
             id="name"
             label="Email Address"
