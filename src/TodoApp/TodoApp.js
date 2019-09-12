@@ -1,31 +1,128 @@
-import React from "react";
-import TodoForm from "./TodoForm";
-import TodoList from "./TodoList";
-import useTodoState from "./useTodoState";
-import Paper from "@material-ui/core/Paper";
-import Container from "@material-ui/core/Container";
-import '../styles.css';
+import React, { useState } from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import {
+  List,
+  ListItem,
+  ListItemText,
+  ListItemSecondaryAction,
+  ListItemAvatar,
+  ListItemIcon,
+  Avatar,
+  TextField,
+  IconButton,
+  Container,
+  Paper
+} from "@material-ui/core";
+import { green } from "@material-ui/core/colors";
+import AssignmentIcon from "@material-ui/icons/Assignment";
+import DeleteIcon from "@material-ui/icons/Delete";
 
-const TodoApp = () => {
-  const { todos, addTodo, deleteTodo } = useTodoState([]);
+const useStyles = makeStyles({
+  greenAvatar: {
+    margin: 10,
+    color: "#fff",
+    backgroundColor: green[500]
+  }
+});
+
+function TodoList({ todo, index, completeTodo, deleteTodo }) {
+  const classes = useStyles();
 
   return (
-    <div>
-      <Container maxWidth="lg">
-        <Paper className="TodoApp">
-          <TodoForm
-            saveTodo={todoText => {
-              const trimmedText = todoText.trim();
-              if (trimmedText.length > 0) {
-                addTodo(trimmedText);
-              }
-            }}
-          />
-          <TodoList todos={todos} deleteTodo={deleteTodo} />
-        </Paper>
-      </Container>
-    </div>
+    <List>
+      <ListItem button onClick={() => completeTodo(index)}>
+        <ListItemAvatar>
+          <Avatar className={classes.greenAvatar}>
+            <AssignmentIcon />
+          </Avatar>
+        </ListItemAvatar>
+        <ListItemText
+          primary={todo.text}
+          style={{ textDecoration: todo.isCompleted ? "line-through" : "none" }}
+        />
+        <ListItemSecondaryAction>
+          <ListItemIcon>
+            <IconButton edge="end" aria-label="delete">
+              <DeleteIcon onClick={() => deleteTodo(index)} />
+            </IconButton>
+          </ListItemIcon>
+        </ListItemSecondaryAction>
+      </ListItem>
+    </List>
   );
-};
+}
 
-export default TodoApp;
+function TodoForm({ addTodo }) {
+  const [value, setValue] = useState("");
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    if (!value) return;
+    addTodo(value);
+    setValue("");
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <TextField
+        id="standard-bare"
+        defaultValue="Bare"
+        margin="normal"
+        value={value}
+        placeholder="Add Todo..."
+        onChange={e => setValue(e.target.value)}
+      />
+    </form>
+  );
+}
+
+export default function TodoApp() {
+  const [todos, setTodos] = useState([
+    {
+      text: "Practice JavaScript",
+      isCompleted: false
+    },
+    {
+      text: "Update Resume",
+      isCompleted: false
+    },
+    {
+      text: "Go Kyaking",
+      isCompleted: false
+    }
+  ]);
+
+  const addTodo = text => {
+    const newTodos = [{ text }, ...todos];
+    setTodos(newTodos);
+  };
+
+  const completeTodo = index => {
+    const newTodos = [...todos];
+    newTodos[index].isCompleted = true;
+    setTodos(newTodos);
+  };
+
+  const deleteTodo = index => {
+    const newTodos = [...todos];
+    newTodos.splice(index, 1);
+    setTodos(newTodos);
+  };
+
+  return (
+    <Container maxWidth="md">
+      <TodoForm addTodo={addTodo} />
+      <Paper>
+        {todos.map((todo, index) => (
+          <TodoList
+            key={index}
+            index={index}
+            todo={todo}
+            completeTodo={completeTodo}
+            deleteTodo={deleteTodo}
+          />
+        ))}
+      </Paper>
+    </Container>
+  );
+}
