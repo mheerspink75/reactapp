@@ -42,8 +42,8 @@ function TodoList({ todo, index, completeTodo, deleteTodo }) {
         />
         <ListItemSecondaryAction>
           <ListItemIcon>
-            <IconButton edge="end" aria-label="delete">
-              <DeleteIcon onClick={() => deleteTodo(index)} />
+            <IconButton edge="end" aria-label="delete" onClick={() => deleteTodo(index)} >
+              <DeleteIcon />
             </IconButton>
           </ListItemIcon>
         </ListItemSecondaryAction>
@@ -66,7 +66,6 @@ function TodoForm({ addTodo }) {
     <form onSubmit={handleSubmit}>
       <TextField
         id="standard-bare"
-        defaultValue="Bare"
         margin="normal"
         value={value}
         placeholder="Add Todo..."
