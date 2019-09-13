@@ -3,7 +3,7 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import { List, ListItem, ListItemText } from "@material-ui/core";
 
-export class FormContactInfo extends Component {
+export default class FormContactInfo extends Component {
   continue = e => {
     e.preventDefault();
     this.props.nextStep();
@@ -61,4 +61,3 @@ export class FormContactInfo extends Component {
   }
 }
 
-export default FormContactInfo;
