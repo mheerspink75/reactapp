@@ -1,68 +1,81 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project 3: Task Management Web App
 
-## Available Scripts
 
-In the project directory, you can run:
+---
 
-### `npm start`
+**Name:  Matt Heerspink**  
+**Contact: mheerspink75@gmail.com**  
+**Organization: Texas A&M University Kingsville**  
+**Program:  Full Stack Web Development Bootcamp**  
+**Project:  Task Management Web App**
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Abstract:  
+The main purpose of this project is to build out a front end task management app with a fully functional todo list and contact form that use controlled components in React. The full project requirements can be found  [here](https://sites.google.com/view/reference-page/procject-3). 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Workflow Requirements
 
-### `npm test`
+### User Stories:
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**1.** 
 
-### `npm run build`
+**2.** 
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**3.** 
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Wireframes:
 
-### `npm run eject`
+**1.** Todo List: [Wireframe 1](https://codesandbox.io/s/todolistapp-29m9s), [Wireframe 2](https://codesandbox.io/s/react-todo-list-use-state-bewkb)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**2.** Contact Form: [Wireframe](https://codesandbox.io/s/material-demo-0n53k)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**3.** Todo List App: [Wireframe](https://codesandbox.io/s/todoapp1-edit-59g2z)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
+### State and Component Planning
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![FlowChart](./src/images/flowchart/TodoAppFlowChart.jpg)
 
-## Learn More
+### Development Phase:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**1.** 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**2.** 
 
-### Code Splitting
+**3.** 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+**4.** 
 
-### Analyzing the Bundle Size
+**5.** 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+**6.** 
 
-### Making a Progressive Web App
+**7.** 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+**8.** 
 
-### Advanced Configuration
+**9.** 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+---
+### Results:
 
-### Deployment
+#### Project URL: [https://mheerspink75.github.io/reactapp/](https://mheerspink75.github.io/reactapp/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+---
 
-### `npm run build` fails to minify
+#### Desktop View:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+#### Mobile View:
+
+
+---
+
+#### Future Improvements:
+
+**1.** 
+
+**2.**  
+
+**3.**  
+
