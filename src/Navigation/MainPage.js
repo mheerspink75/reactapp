@@ -18,10 +18,10 @@ import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import CloudDownloadOutlinedIcon from '@material-ui/icons/CloudDownloadOutlined';
 import MailIcon from '@material-ui/icons/Mail';
-import TodoApp from '../TodoApp/TodoApp';
-
-import FormDialog from "../Contactform/FormDialog";
 import logo from '../logo.svg';
+
+import TodoApp from '../TodoApp/TodoApp';
+import FormDialog from "../Contactform/FormDialog";
 import '../styles.css';
 
 
