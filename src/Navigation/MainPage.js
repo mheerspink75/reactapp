@@ -142,7 +142,7 @@ export default function MainPage() {
             </ListItemIcon>
             <ListItemText primary="GitHub" />
           </ListItem>
-          <ListItem button component="a" href="https://codesandbox.io/s/todoapp1-edit-59g2z" target="blank">
+          <ListItem button component="a" href="https://codesandbox.io/s/react-todo-list-use-state-bewkb" target="blank">
             <ListItemIcon>
               <InboxIcon />
             </ListItemIcon>
