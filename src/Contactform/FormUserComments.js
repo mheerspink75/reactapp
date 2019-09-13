@@ -3,7 +3,7 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import { List, ListItem, ListItemText } from "@material-ui/core";
 
-export class FormUserComments extends Component {
+export default class FormUserComments extends Component {
   continue = e => {
     e.preventDefault();
     this.props.nextStep();
@@ -17,7 +17,6 @@ export class FormUserComments extends Component {
   render() {
     const { values, handleChange } = this.props;
     return (
-      <div>
         <List>
           <ListItemText primary="Please enter a comment and continue to verify your information..." />
           <ListItem>
@@ -33,16 +32,14 @@ export class FormUserComments extends Component {
               defaultValue={values.comment}
             />
           </ListItem>
-          <Button color="primary" label="Continue" onClick={this.continue}>
+          <Button  label="Continue" color="primary" onClick={this.continue}>
             Continue
           </Button>
-          <Button label="Back" onClick={this.back} color="secondary">
+          <Button label="Back" color="primary" onClick={this.back}>
             Back
           </Button>
         </List>
-      </div>
     );
   }
 }
 
-export default FormUserComments;
