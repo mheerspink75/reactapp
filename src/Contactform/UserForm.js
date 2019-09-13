@@ -4,7 +4,7 @@ import FormUserComments from "./FormUserComments";
 import Confirm from "./Confirm";
 import Success from "./Success";
 
-export class UserForm extends Component {
+export default class UserForm extends Component {
   state = {
     step: 1,
     firstName: "",
@@ -71,5 +71,4 @@ export class UserForm extends Component {
   }
 }
 
-export default UserForm;
 

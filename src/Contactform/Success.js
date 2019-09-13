@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Typography from "@material-ui/core/Typography";
 
-export class Success extends Component {
+export default class Success extends Component {
   continue = e => {
     e.preventDefault();
     // PROCESS FORM //
@@ -32,5 +32,4 @@ export class Success extends Component {
   }
 }
 
-export default Success;
 
