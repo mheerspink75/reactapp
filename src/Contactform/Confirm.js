@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { List, ListItemText } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 
-export class Confirm extends Component {
+export default class Confirm extends Component {
   continue = e => {
     e.preventDefault();
     // PROCESS FORM //
@@ -32,7 +32,7 @@ export class Confirm extends Component {
         <Button label="Confirm" color="primary" onClick={this.continue}>
           Confirm
         </Button>
-        <Button label="Back" color="secondary" onClick={this.back}>
+        <Button label="Back" color="primary" onClick={this.back}>
           Back
         </Button>
       </List>
@@ -40,5 +40,4 @@ export class Confirm extends Component {
   }
 }
 
-export default Confirm;
 
