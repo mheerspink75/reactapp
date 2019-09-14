@@ -16,6 +16,9 @@ export default class FormUserComments extends Component {
 
   render() {
     const { values, handleChange } = this.props;
+    const canContinue = (values.comment.length > 0);
+    const continueButton = <Button color="primary" label="Continue" onClick={this.continue}>Continue</Button>;
+
     return (
         <List>
           <ListItemText primary="Please enter a comment and continue to verify your information..." />
@@ -32,9 +35,7 @@ export default class FormUserComments extends Component {
               defaultValue={values.comment}
             />
           </ListItem>
-          <Button  label="Continue" color="primary" onClick={this.continue}>
-            Continue
-          </Button>
+          {canContinue ? continueButton : <Button disabled>Continue</Button>}
           <Button label="Back" color="primary" onClick={this.back}>
             Back
           </Button>

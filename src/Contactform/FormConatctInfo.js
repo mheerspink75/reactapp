@@ -11,6 +11,9 @@ export default class FormContactInfo extends Component {
 
   render() {
     const { values, handleChange } = this.props;
+    const canContinue = (values.firstName.length > 0 && values.lastName.length > 0 && values.email.length > 0);
+    const continueButton = <Button color="primary" label="Continue" onClick={this.continue}>Continue</Button>;
+
     return (
       <List>
         <ListItemText
@@ -53,9 +56,7 @@ export default class FormContactInfo extends Component {
             defaultValue={values.email}
           />
         </ListItem>
-        <Button color="primary" label="Continue" onClick={this.continue}>
-          Continue
-        </Button>
+        {canContinue ? continueButton : <Button disabled>Continue</Button>}
       </List>
     );
   }
