@@ -20,7 +20,7 @@ export default class Confirm extends Component {
     } = this.props;
     return (
       <List>
-        <ListItemText primary="Please verify your contact info before clicking continue..." />
+        <ListItemText primary="Please verify your contact information before clicking confirm..." />
         <hr />
         <ListItemText secondary="Name:  " />
         <ListItemText primary={firstName + " " + lastName} />
