@@ -21,7 +21,7 @@ export default class Success extends Component {
     return (
       <div>
         <Typography variant="h5" align="center">
-          Thank You, {firstName + " " + lastName} For Your Submission!
+          Thank You {firstName + " " + lastName} For Your Submission!
         </Typography>
         <br />
         <Typography align="center">
