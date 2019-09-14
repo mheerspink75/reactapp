@@ -25,7 +25,7 @@ The main purpose of this project is to build out a front end task management app
 
 ### Wireframes:
 
-**1.** Todo List: [Wireframe 1](https://codesandbox.io/s/todolistapp-29m9s), [Wireframe 2](https://codesandbox.io/s/react-todo-list-use-state-bewkb)
+**1.** Todo List: [Wireframe](https://codesandbox.io/s/react-todo-list-use-state-bewkb)
 
 **2.** Contact Form: [Wireframe](https://codesandbox.io/s/material-demo-0n53k)
 
@@ -68,7 +68,7 @@ The main purpose of this project is to build out a front end task management app
 ![DesktopView1](./src/images/screenshots/desktop&#32;view/TodoListAppDesktopView1.jpg) ![DesktopView2](./src/images/screenshots/desktop&#32;view/TodoListAppDesktopView2.jpg) ![DesktopView3](./src/images/screenshots/desktop&#32;view/TodoListAppDesktopView3.jpg) ![DesktopView4](./src/images/screenshots/desktop&#32;view/TodoListAppDesktopView4.jpg) ![DesktopView5](./src/images/screenshots/desktop&#32;view/TodoListAppDesktopView5.jpg) ![DesktopView6](./src/images/screenshots/desktop&#32;view/TodoListAppDesktopView6.jpg)
 
 #### Mobile View:
-
+![MobileView1](./src/images/screenshots/mobile&#32;view/TodoListAppMobileView1.jpg) ![MobileView2](./src/images/screenshots/mobile&#32;view/TodoListAppMobileView2.jpg) ![MobileView3](./src/images/screenshots/mobile&#32;view/TodoListAppMobileView3.jpg) ![MobileView4](./src/images/screenshots/mobile&#32;view/TodoListAppMobileView4.jpg)
 
 ---
 
