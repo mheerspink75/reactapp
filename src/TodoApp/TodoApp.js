@@ -98,7 +98,7 @@ export default function TodoApp() {
 
   const completeTodo = index => {
     const newTodos = [...todos];
-    newTodos[index].isCompleted = true;
+    newTodos[index].isCompleted = !todos[index].isCompleted;
     setTodos(newTodos);
   };
 
