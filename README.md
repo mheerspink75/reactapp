@@ -16,11 +16,14 @@ The main purpose of this project is to build out a front end task management app
 
 ### User Stories:
 
-**1.** 
+**1.** "As a student studying web development, I want a solution with a simple interface that can add, remove and update the completed status of todo list items."  
+*- Daniel*
 
-**2.** 
+**2.** "As a user of both mobile and desktop applications, I want a light weight task management application that is available on both platforms as well as cross compatible on mobile devices."  
+*- Mark*
 
-**3.** 
+**3.** "As a mobile user, I prefer progressive web apps for smaller applications because they don't need to be installed on my phone."  
+*- Laura*
 
 
 ### Wireframes:
@@ -74,9 +77,9 @@ The main purpose of this project is to build out a front end task management app
 
 #### Future Improvements:
 
-**1.** 
+**1.** Server-side form validation was not required in this project. In the future I would like to work on further customization to the front-end and server-side validation.
 
-**2.**  
+**2.** Local storage was not required in this project. I would also like to integrate local storage.
 
-**3.**  
+**3.** In the future I would like to add more functionality to the project by integrating tables with search, pagination and sorting functionality.
 
